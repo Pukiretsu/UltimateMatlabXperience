@@ -1,2 +1,3 @@
 # UltimateMatlabXperience
-A repo where i place the stuff that i do in Numeric Methods Class :/
+Aqui guardo lo que hago para mi clase de metodos numericos :P
+
