@@ -57,3 +57,14 @@ function maxGrade = Lg_MaxPolyGrade(xData, yData)
         maxGrade = nan;
     end
 end
+
+function AvgError2 = Lg_AvrgCuadraticError(lagrangeint,xi,yi)
+
+    Error = zeros(0);
+    
+    for i = 1:length(xi)
+        Error(i) = lagrangeint(xi(i)) - yi(i);
+    end
+
+    AvgError2 = sqrt(sum(Error.^2)/length(xi)); 
+end
