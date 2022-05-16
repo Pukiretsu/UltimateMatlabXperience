@@ -65,6 +65,30 @@ disp("[Punto B]")
 disp("La densidad a 50°C y 28% concentracion es: " + double(aprox) + "")
 disp("Con un error cuadratico medio tal que: " + ErrorCuadratico)
 
+%--------------------------------------------------------------------------
+% C. Densidad a 90°C y 25% de concentración
+
+xi = values(1, 2:end);
+
+yi = values(4, 2:end);
+maxGrade = Lg_MaxPolyGrade(xi, yi);
+lagrangeint(x) = LagrangeAproxPoly(xi, yi, maxGrade, false);
+aprox = (lagrangeint(90));
+
+yi = values(5, 2:end);
+lagrangeint(x) = LagrangeAproxPoly(xi, yi, maxGrade, false);
+aprox(end+1) = lagrangeint(90);
+
+xi = values(4:end, 1)';
+yi = double(aprox);
+
+maxGrade = Lg_MaxPolyGrade(xi, yi);
+lagrangeint(x) = LagrangeAproxPoly(xi, yi, maxGrade, false);
+aprox = (lagrangeint(25));
+
+disp(" ")
+disp("[Punto C]")
+disp("La densidad a 90°C y 25% concentracion es: " + double(aprox) + "")
 
 % -------------------------------------------------------------------------
 % [Espacio para las funciones]
