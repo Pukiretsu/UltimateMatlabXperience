@@ -23,8 +23,8 @@ syms lagrangeint(x)
 disp("Primer Punto: ")
 
 % Declaracion de datos
-xi = [0 6 10 13 17 20 28];
-yi = [6.67 17.33 42.67 37.33 30.10 29.31 28.74];
+xi = [0 1 5 9 10];
+yi = [0 2 2.5 2 0];
 
 Datos = [xi' yi'];
 
@@ -80,7 +80,7 @@ disp("Error cuadrático medio: " + ErrorCuadratico)
 
 % Grafica de los puntos y la curva de ajuste
 
-y = linspace(-1,30,1000);
+y = linspace(-1,11,1000);
 approxfun = lagrangeint(y);
 dxfun = derivada(y);
 

@@ -4,9 +4,6 @@
 % que se requiera para la aproximacion de newton con respecto a diferencias
 % finitas, tambien retorna la tabla de diferencias divididas hacia adelante
 % y hacia atrás
-%  
-%
-%
 %
 % Programado por Pukiretsu [13-05-2022]
 %
