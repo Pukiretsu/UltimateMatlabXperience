@@ -1,7 +1,7 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows,matlab
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,matlab
+# Created by https://www.toptal.com/developers/gitignore/api/windows,matlab,video
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,matlab,video
 
 ### MATLAB ###
 # Windows default autosave extension
@@ -36,6 +36,24 @@ codegen/
 # Octave session info
 octave-workspace
 
+### Video ###
+*.3g2
+*.3gp
+*.asf
+*.asx
+*.avi
+*.flv
+*.mkv
+*.mov
+*.mp4
+*.mpg
+*.ogv
+*.rm
+*.swf
+*.vob
+*.wmv
+*.webm
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -62,7 +80,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,matlab
+# End of https://www.toptal.com/developers/gitignore/api/windows,matlab,video
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
